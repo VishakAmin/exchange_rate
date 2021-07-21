@@ -9,21 +9,11 @@ import { getRatesAmount, getRatesCurrencyCode, getCurrencyData, changeCurrencyCo
 
 
 export function ExchangeRate() {
-  // const [amount, setAmount] = useState("1.50");
-  // const [currencyCode, setCurrencyCode] = useState("USD");
-  // const [currencyData, setCurrencyData] = useState({ USD: 1.0 });
 
-  // const dispatch = useDispatch()
   const amount = useSelector(getRatesAmount);
   const currencyCode = useSelector(getRatesCurrencyCode);
   const currencyData = useSelector(getCurrencyData);
 
-
-  // fetch the exchange rates first times..
-
-  // useEffect(() => {
-  //   dispatch(changeCurrencyCode(currencyCode))
-  // }, []);
 
   return (
     <>
