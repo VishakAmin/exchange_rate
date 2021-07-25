@@ -9,7 +9,7 @@ export function RateTable({ currencyData, amount }) {
       <tbody>
         {Object.entries(currencyData).map(([code, rate]) => {
           // NOTE: normally avoid floating point math in JS
-          const exchangeAmount = amount * rate || 0.0;
+          const exchangeAmount = amount * rate || 0.00;
           return (
             <tr key={code}>
               <td>{code}</td>
@@ -25,7 +25,7 @@ export function RateTable({ currencyData, amount }) {
       </tbody>
       <tfoot>
         <tr>
-          <td colSpan={2}>Made by {name}</td>
+          <td colSpan={2}>Made with love by {name}</td>
         </tr>
       </tfoot>
     </table>
