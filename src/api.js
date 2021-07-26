@@ -24,7 +24,7 @@ function handleAPIErrors(res) {
   console.error(`Server Error: ${res.error.info}`);
   return {
     rates: {
-      USD: 1.0,
+      USD: 1.00,
     },
   };
 }
