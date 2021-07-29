@@ -11,7 +11,7 @@ export function AmountField({ amount }) {
   return (
     <form className="ExchangeRate-form">
       <input
-        aria-label="Amount in base currencys"
+        aria-label="Amount in base curr"
         type="text"
         value={amount}
         onChange={onChange}
